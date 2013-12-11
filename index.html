@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Inter IIT Tech Meet 2014, Organised by IIT Bombay">
+    <meta name="author" content="">
+
+    <title>InterIIT Tech | IIT Bombay</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+  <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700|Open+Sans:300italic,400,300,700' rel='stylesheet' type='text/css'>
+    <!-- Add custom CSS here -->
+    <!-- facebook tags -->
+    <meta property="og:title" content="Inter IIT Tech Meet | IIT Bombay"/>
+    <meta property="og:image" content="http://www.interiitech.in/bombay.jpg"/>
+    <meta property="og:site_name" content="Inter IIT Tech meet"/>
+    <meta property="og:description" content="Inter IIT Tech meet 2014, organised by IIT Bombay"/>
+
+    <link href="css/full-slider.css" rel="stylesheet">
+    <link href="css/stylesheet.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-fixed-top navbar-inverse" id="nav" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="./">Inter IIT Tech</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="#about">About</a></li>
+            <li><a href="#events">Competitions</a></li>
+            <li><a href="./faqs.html">Faqs</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container -->
+    </nav>
+    
+    <div id="myCarousel" class="carousel slide">
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+          <div class="item active">
+            <div class="fill" style="background-image:url('./images/bombay.jpg');"></div>
+            <div class="carousel-caption">
+              <h1>IIT Bombay presents Inter IIT Tech</h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" id="d1" style="background-image:url('./images/delhi.jpg')"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/kanpur.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/bhu.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/bhubaneshwar.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/guwahati.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/hyderabad.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/jodhpur.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/madras.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/mandi.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/roorkee.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/ropar.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/gandhinagar.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/indore.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+          <div class="item">
+            <div class="fill" style="background-image:url('./images/kharagpur.jpg');"></div>
+            <div class="carousel-caption">
+              <h1></h1>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+          <span class="icon-prev"></span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+          <span class="icon-next"></span>
+        </a>
+</div>
+<script type="text/javascript">
+$('#myCarousel').on('slid', function() {
+    var $nextImage = $('.active.item', this).next('.item').find('.fill');
+    $($nextImage.attr('id')).css('background-image', $nextImage.data('data-load-src'));
+});
+</script>
+    <div class="container" id="about">
+      <div class="col-lg-12">
+        <h1 class="page-header">About Us</h1>
+      </div>
+      <div class="row">
+        
+        <div class="col-lg-7 col-md-7">
+          <br/>
+          <br/><br/>
+          <a href="#"><img class="img-responsive" src="./images/about-us.jpg"></a>
+        </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>About</h3>
+          <p>&nbsp; &nbsp;&nbsp; &nbsp;The <b>Inter-IIT Technical Meet</b>, a pan-IIT competition on science and technology, along the lines of Inter-IIT Sports was first inaugurated in 2013 by the <b>Indian Institute of Technology, Kanpur (IITK)</b>. This was the first step to provide a pedestal to engage the best minds from all the Indian Institutes of Technology of the country.<br/><br/>The <b>Indian Institute of Technology, Bombay</b> takes immense pleasure in elevating this platform to the next level. IIT Bombay will be organizing the <b>2nd Inter-IIT Technical Meet 2013-14</b>. The meet will be held at IIT Bombay, Mumbai from <b>2nd to 5th January 2014</b> alongside <b><i>Techfest 2013-14 </i></b> (3rd - 5th January 2014), the annual technical festival of IIT Bombay and the Asia’s largest of its kind. This would also help the participants take part in the wide plethora of events conducted by the Techfest 2013-14.</p>
+        </div>
+
+      </div>
+    <div class="row" id="events"> 
+      <br/>
+      <div class="col-lg-12">
+        <h1 class="page-header">Competitions<small> &nbsp; in Inter IIT Tech</small></h1>
+      </div>
+    </div>
+
+      <div class="row">
+        
+        <div class="col-lg-7 col-md-7">
+          <a data-toggle="modal" href="#myModal"><img class="img-responsive" src="./images/1.jpg"></a>
+        </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>Inter-IIT-Social Impact</h3>
+          <p>Each of the participating IITs is to propose solutions that aim towards social reformation and upliftment using the tool of technology.The solution could be one that makes existing ideas/technologies more cost effective or robust. It could also be a completely new concept. 
+          </p>
+          <br/>
+          <a data-toggle="modal" href="#myModal" class="btn btn-primary">View Details <span class="glyphicon glyphicon-chevron-right"></span></a> &nbsp; &nbsp;
+          <a href="./pdf/Social%20Impact.pdf" class="btn btn-primary" > Download <span class="glyphicon glyphicon-chevron-down"></span></a>
+          &nbsp; &nbsp;
+          <a href="./register.html" class="btn btn-success" > Register <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h2 class="modal-title">Inter-IIT-Social Impact</h2>
+                  </div>
+                  <div class="modal-body">
+                      <p>Propose technological solutions to real world problems faced by the society. The solution can be an improvement of an existing idea or a completely new solution to the problem.
+                      </p>
+                    <ul class="nav nav-tabs">
+                      <li class="active"><a href="#tab11">Themes</a></li>
+                      <li><a href="#tab12">Submission Procedure</a></li>
+                      <li><a href="#tab13">Rules and Regulations</a></li>
+                    </ul>
+                    <div id="my-tab-content" class="tab-content">
+                      <div class="tab-pane active" style="margin-right:30px;" id="tab11">
+                        <div class="page-header">
+                          <h1> Themes </h1>
+                        </div>
+                        <p>Owing to the nature of the problem statement, which is very general, we would like to suggest someideas to effectively communicate the theme of the competition. Please note, the following ideas are directional only and purely suggestive in nature. The participants are free and encouraged to explore beyond those mentioned below.</p>
+                        <ol>
+                          <li><b>Conquering the Disability:</b> Disability may refer to physical impairment, activity limitation or participation restriction. It is technology, that has enabled independent movement of motion-impaired individuals, education for visually impaired and many more. Have we been successful in addressing all their problems? Do we have a solution to help the visually challenged self-navigate unknown environment? Is there a technological solution to help them read non-braille texts? </li>
+
+                          <li><b>Say No to Plastic:</b> The efficiency of plastic waste collection and recycling in our country is still as low as 60 percent, according to the Central Pollution Control Board. The non-recycled waste either enters land-fills or the marine ecosystem causing an ecological imbalance. Moreover, the current system uses a lot of man power, which magnifies the ineffciency. Is there an efficient method that can reduce plastic usage or improve segregation of plastic from other organic waste? </li> 
+
+                          <li><b>Problem of Networking:</b> Even though we would like to call our generation socially the most connected, there are still many persistent problems that are yet to be solved. Establishing a vibrant network of organ or blood donors with hospitals and seekers is a challenge waiting to be conquered. Does technology have an solution to this?</li>
+
+                          <li><b>Transportation in hilly areas:</b> Remote and hilly parts of our country are not yet well connected with the transportation network
+and hence a large proportion of people rely on cycles. Is the present prototype of cycles ecient in
+catering to the need of cycling in hilly areas? Can we think of an alternate prototype to reduce effort
+in cycling up the hill?</li>
+
+                          <li><b>Cheaper Wind Energy:</b> When alternate forms of energy are the only sustainable options at hand, the trade-off occurs in the
+cost of installation and maintenance. Initial cost for wind turbines is greater than that of conventional fossil fuel generators per MW installed. Noise produced by the rotor blades also being a governing factor. Do we have a small, efficient, cheaper way of extracting and utilizing wind energy?</li>
+                        </ol>
+                      </div>
+                      <div class="tab-pane active" style="margin-right:30px;" id="tab12">
+                        <div class="page-header">
+                          <h1> Submission Procedure </h1>
+                        </div>
+                          <ol>
+                            <li><b>Problem Specification and Timeline Proposal:</b><br />
+                                <i>Online till 10 November 2013, 11:59 pm</i><br />
+                                An abstract needs to be submitted explaining the problem in hand, its expected solution and an overview of the prototype that will be built. An expected timeline of procedure of making the prototype should also be submitted. This needs to be submitted to the respective IIT representative first and the representative should upload the selected ideas on website by 10 November. </li>
+
+                            <li><b>First Submission:</b><br />
+                                <i>Online till 15 December 2013, 11:59 pm</i><br />
+                                A two A4 page report including the details of the work done till now and the work left and how that is going to be accomplished. A small video also needs to be uploaded explaining the prototype built till then and the amount of work that is remaining.
+                            </li>
+                            <li><b>Final Presentation Submission:</b><br />
+                                <i>Online till 28 December 2013, 11:59 pm</i>
+                                A presentation of the final prototype built explaining the concept, the approach and how your idea is going to impact the life of people. This will be the presentation that will be used during the meet in the final presentation.
+                            </li>
+
+                            <li><b>Final Submission:</b><br />
+                                <i>During the meet at IIT Bombay</i><br/>
+                                Each team will be given a maximum of 15 minutes to present their idea and the prototype they have built. The presentation that was sent as final presentation must be used. However, slight changes are allowed if required.
+                            </li>
+                          </ol>
+                      </div>
+                      <div class="tab-pane active" style="margin-right:30px;" id="tab13">
+                        <div class="page-header">
+                            <h1>Rules and Regualtions</h1>
+                        </div>
+                          <ol>
+                            <li>Team size is strictly limited to maximum of three members.</li>
+                            <li>All the online submission is to be done on the portal on the inter iit website.</li>
+                            <li>A working prototype model is necessary. The prototype should be demonstrable and it should demonstrate the concept behind your idea.</li>
+                            <li>The evaluation criteria includes justification of the social impact claimed by the team during the final presentation. This evaluation is bound to be subjective and the decision taken by the judges will be final and binding.</li>
+                            <li>Missing any of the deadlines may lead to disqualication of the team.</li>
+                          </ol>
+                      </div>
+                      <script type="text/javascript">
+                        $(function(){ 
+                            $('.nav-tabs a').on('click', function (e) {
+                                e.preventDefault();
+                                $(this).tab('show');
+                            });  
+                        });
+                    </script>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                  </div>
+                </div><!-- /.modal-content -->
+              </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+        </div>
+      </div>
+  <hr>
+        <div class="row">
+        
+        <div class="col-lg-7 col-md-7">
+          <a data-toggle="modal" href="#myModal1"><img class="img-responsive" src="./images/2.jpg" ></a>
+        </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>Messier Marathon</h3>
+          <p>The competition draws its roots from the French Astronomer, Charles Messier of the 18th Century.He was an avid comet hunter, who was frustrated by objects which resembled but were not comets.So, he along with his assistant Pierre Mechain compiled a list of such objects, popularly known asMessier Catalogue. A Messier Marathon is an attempt, usually organized by amateur astronomers,to find as many Messier Objects as possible during one night. The Messier Catalogue consists of 110relatively bright deep sky objects (galaxies, nebulae and star clusters).</p>
+          <a data-toggle="modal" href="#myModal1" class="btn btn-primary">View Details <span class="glyphicon glyphicon-chevron-right"></a>&nbsp; &nbsp;
+          <a href="./pdf/messiar-marathon.pdf" class="btn btn-primary" > Download <span class="glyphicon glyphicon-chevron-down"></span></a>
+          &nbsp; &nbsp;
+          <a href="./register.html" class="btn btn-success" > Register <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h1 class="modal-title">Messier Marathon</h1>
+                </div>
+                <div class="modal-body">
+                    <p > <b> Challenge: </b>To identify maximum number of items from the messier catalogue through the course of the nightusing the equipments provided.<br/></p>
+                    <ul class="nav nav-tabs">
+                        <li class="active"><a href="#task" data-toggle="tab">Task</a></li>
+                        <li><a href="#tab14" data-toggle="tab"> Rules and Regulations</a></li>
+                    </ul>
+                    <div id="my-tab-content1" class="tab-content">
+                      <div class="tab-pane active" style="margin-right:30px;" id="task">
+                        <div id="active_tp" style="margin-right:20px">
+                            <div class="page-header">
+                              <h4>The Competition: </h4>
+                            </div>
+                            <p>
+                              <br />There is a collection of 110 deep-space objects like nebulae, clusters, galaxies etc. that was compiled by the astronomer Charles Messier. A Messier Marathon is a popular competition for amateur astronomers in which participants point out as many Messier objects as they can with a telescope through the course of the night.
+                            </p>
+                            <div class="page-header">
+                              <h4>Dates:</h4>
+                            </div>
+                            <p >The event will span over three days, 2nd to 4th January. The rough itinerary will be as given below:</p>
+                            <table class="table table-bordered"> 
+                                <tbody>
+                                  <tr>
+                                    <td >2nd Jan </td>
+                                    <td>Everyone gathers at IIT Bombay. We leave for GMRT in the afternoon. We reach GMRT by late evening. This night, which is a full moon night, will be for practice and leisure sky observation.</td> 
+                                  </tr> 
+                                  <tr>
+                                    <td >3rd Jan </td>
+                                    <td>Release of the marking scheme and time to plan out strategies for the competition that will begin as soon as the sun sets.</td> 
+                                  </tr>
+                                  <tr>
+                                    <td >4th Jan </td>
+                                    <td>Roam around GMRT and visit the labs there. Chance to interact with peoplewho work there. We will leave post lunch and reach IIT Bombay by night.</td> 
+                                  </tr> 
+                                   <tr>
+                                    <td >5th Jan </td>
+                                    <td>Prize distribution at IIT Bombay along with prize distribution of the Inter IIT Tech Meet.</td> 
+                                  </tr>   
+                                </tbody>
+                            </table><br>
+                            <div class="page-header">
+                              <h4>Venues:</h4>
+                            </div>
+                            <p >Like last year, the venue will be the Giant Metrewave Radio Telescope (GMRT), Khodad near Pune. IIT Bombay will arrange buses to take the teams from Bombay to GMRT. Food and accommodation will be provided at the venue.</p><br>
+                        </div>
+                      </div>
+                      <div class="tab-pane active" style="margin-right:30px;" id="tab14">
+                        <div class="page-header">
+                            <h4>Rules and Regualtions</h4>
+                        </div>
+                          <ol>
+                            <li>Each team will be provided with an alt-az mounted telescope (5" diameter), ensuring fair com-petition.</li>
+                            <li>There will be few surprise elements and bonus objects, that will declared at the time of thecompetition.</li>
+                            <li>The team size is strictly limited to 4 members and a maximum of 1 team per IIT is allowed toparticipate in the marathon.</li>
+                            <li>Star maps will be provided on the day of the practice day (2nd Jan 2014) and the same willbe used for the competition. Use of any other printed material or electronic gadgets is strictlyprohibited. However, hand-made notes and calculators will be allowed.</li>
+                            <li>The evaluation criteria of the competition is simple. More the number of objects the team
+                              identifies in the field of the eyepiece, more the number of points it scores. However, as mentioned earlier, bonus objects might carry more weightage.</li>
+                          </ol>
+                      </div>
+
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </div>
+
+      </div>
+
+      <hr>
+        <div class="row">
+        
+        <div class="col-lg-7 col-md-7">
+          <a data-toggle="modal" href="#myModal2"><img class="img-responsive" src="./images/3.jpg" ></a>
+        </div>
+
+        <div class="col-lg-5 col-md-5">
+          <h3>Software Development</h3>
+          <p>Solve a local problem around you/your society.</p>
+          <a data-toggle="modal" href="#myModal2" class="btn btn-primary">View Details <span class="glyphicon glyphicon-chevron-right"></a>&nbsp; &nbsp;
+          <a href="./pdf/Software%20Development.pdf" class="btn btn-primary" > Download <span class="glyphicon glyphicon-chevron-down"></span></a>
+          &nbsp; &nbsp;
+          <a href="./register.html" class="btn btn-success" > Register <span class="glyphicon glyphicon-chevron-right"></span></a>
+
+          <!-- Modal -->
+          <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h1 class="modal-title">Software Development</h1>
+                </div>
+                <div class="modal-body">
+                    <p >Solve a local problem around you/your society. <br/></p>
+                    <ul class="nav nav-tabs">
+                        <li class="tab active"><a href="#phase1" data-toggle="tab">Phase I</a></li>
+                        <li class="tab"><a href="#phase2" data-toggle="tab">Phase II</a></li>
+                    </ul>
+                    <div id="my-tab-content1" class="tab-content">
+                      <div class="tab-pane active" style="margin-right:30px;" id="phase1">
+                        <div class="page-header">
+                            <h3>Phase I</h3>
+                        </div>
+                        <br/>
+                        <p>
+                        Solve a local problem around you/your society. Participants can pick any of the below problem oridentify one on their own - as long as it addresses a genuine local issue.</p>
+                        <ul>
+                          <li> Women safety</li>
+                          <li> Availability and accessibility of healthy food and clean water</li>
+                          <li> Child labour and Right to Education. </li>
+                          <li> Infrastructure and Sustainable development.</li>
+                          <li>Transportation and Road SafetyRequirements</li>
+                        </ul>
+                        <div class="page-header">
+                          <h4> Requirements </h4>
+                        </div>
+                        <p>
+                         All the contest entries must use at least one product from below Intel Software offerings:</p>
+                        <ul>
+                          <li><a href="http://software.intel.com/en-us/articles/ultrabook-and-tablet-windows-8-sensors-development-guide"> Touch and Sensor Application Development</a></li>
+                          <li><a href="http://software.intel.com/en-us/articles/android-ndk-for-intel-architecture">Intel Android NDK</a></li>
+                          <li><a href="http://html5dev-software.intel.com/">Intel XDK</a></li>
+                        </ul>
+                        <p>Participants must build their applications for either Windows or Android Platform that runs on IntelArchitecture.</p>
+                        <div class="page-header">
+                          <h4>Evaluation Criteria</h4>
+                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr><td>Parameters</td><td> Weightage</td></tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>Concept</td><td>15</td></tr>
+                            <tr><td>Impact</td><td>50</td></tr>
+                            <tr><td>Execution</td><td>20</td></tr>
+                            <tr><td>Feasibility</td><td>15</td></tr>
+                          </tbody>
+                        </table>
+                        <div class="page-header">
+                          <h4>Rules and Regulations:</h4>
+                        </div>
+                        <ul>
+                          <li>The size of the team is limited to 2 members.</li>
+                          <li>A maximum of 2 teams are allowed to participate in the competition.</li>
+                          <li>The team must upload the application to respective app stores and submit the URLs at thephase 1 submission.</li>
+                          <li>The team must create either a video or blog post about the application and submit along withthe phase 1 submission.</li>
+                          <li>The reach of the application will be a criteria in evaluating the social impact generated by the idea.</li>
+                        </ul>
+                      </div>
+                      <div class="tab-pane active" style="margin-right:30px;" id="phase2">
+                        <div class="page-header">
+                            <h3>Phase II</h3>
+                        </div>
+                        <br/>
+                        <p>
+                        The phase II challenge will be announced on the day of the meet and will be conducted in IIT Bombay.The proposed competition plan is to take the software product development from a computer lab to anoutdoor environment which provides live feedback, suggestions and the requirements that the productneeds to satiate.</p>
+                        <p>
+                        During the two days of the meet, the participants would be provided with the challenge on one day and the nal presentation of the idea developed on the next day.</p>
+                        <p>
+                        This stage of the competition would comprise of : </p>
+                        <ul>
+                          <li> Identification of the problem statement, target audience, personas, etc. </li>
+                          <li> Interaction with the target audience - resource gathering and solution building.</li>
+                          <li> Verifying and Redesigning prototypes with the target audience - alpha testing. </li>
+                          <li> Get people to use the solution - user base acquisition</li>
+                        </ul>
+                        <div class="page-header">
+                          <h4> Requirements </h4>
+                        </div>
+                        <p>
+                         All the contest entries must use at least one product from below Intel Software offerings:</p>
+                        <ul>
+                          <li><a href="http://software.intel.com/en-us/articles/ultrabook-and-tablet-windows-8-sensors-development-guide"> Touch and Sensor Application Development</a></li>
+                          <li><a href="http://software.intel.com/en-us/articles/android-ndk-for-intel-architecture">Intel Android NDK</a></li>
+                          <li><a href="http://html5dev-software.intel.com/">Intel XDK</a></li>
+                        </ul>
+                        <p>Participants must build their applications for either Windows or Android Platform that runs on IntelArchitecture. All the machines will be provided by Intel along with required tools to develop/design solutions { Latest Intel Ultrabook 2-in-1s have 6+ hrs of battery backup. All the participants will re-ceive Internet dongles along with Intel Software SWAG which will have required resources to complete their task.</p>
+                        <div class="page-header">
+                          <h4>Evaluation Criteria</h4>
+                        </div>
+                        <table class="table table-bordered">
+                          <thead>
+                            <tr><td>Parameters</td><td> Weightage</td></tr>
+                          </thead>
+                          <tbody>
+                            <tr><td>Concept</td><td>15</td></tr>
+                            <tr><td>Impact</td><td>50</td></tr>
+                            <tr><td>Execution</td><td>20</td></tr>
+                            <tr><td>Feasibility</td><td>15</td></tr>
+                          </tbody>
+                        </table>
+                        <div class="page-header">
+                          <h4>Important Points</h4>
+                        </div>
+                        <ul>
+                          <li>Phase I can be regarded as a practice phase for phase II, to get acquainted with the providedsoftware tools.</li>
+                          <li>Phase I has a weightage of 40 percent and phase II, which is on-the-spot competition has aweightage of 60 percent.</li>
+                          <li>The panel of judges would comprise of software professionals from Intel and professors from IITBombay.</li>
+                          <li>The phase II of the competition will be related to social or local innovation.</li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+        </div>
+
+      </div>
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+  <div id="fb-root" style="margin:0px auto"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=331093513697854";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+  <div class="fb-like" data-href="http://interiittech.in/" data-width="The pixel width of the plugin" data-height="The pixel height of the plugin" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-send="false"></div>
+    </div>
+
+            <hr>
+            <p style="text-align:center">Copyright &copy; <a href="http://www.iitb.ac.in">IIT Bombay 2013</a> &middot; <a href="http://stab-iitb.org">STAB </a> &middot; <a href="http://www.techfest.org">Techfest</a></p>
+            <p style="text-align:center"> Contact us <a href="mailto:contact@interiittech.in">contact@interiittech.in</a></p>
+          </div>
+        </div>
+      </footer>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- Make sure to add jQuery - download the most recent version at http://jquery.com/ -->
+          <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').carousel({
+                interval: 3000
+            });
+
+            $('.carousel').carousel('cycle');
+        });
+      jQuery(document).ready(function ($) {
+          $('.nav-tabs').tab();
+      });
+      $("#nav ul li a[href^='#']").on('click', function(e) {
+         e.preventDefault();
+         $('html, body').animate({ scrollTop: $(this.hash).offset().top }, 300);
+
+         // edit: Opera and IE requires the "html" elm. animated
+      });
+
+</script>  
+
+  </body>
+</html>

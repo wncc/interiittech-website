@@ -1,0 +1,27 @@
+#nav
+{
+	background-color: #4C4C4C;
+	border-color: #4C4C4C;
+
+}
+#nav li  a 
+{
+	color: white;
+}
+
+#nav div div a 
+{
+	color:white;
+}
+#myModal .modal-dialog
+{
+  width: 75%;/* your width */
+}
+#myModal1 .modal-dialog
+{
+  width: 75%;/* your width */
+}
+#myModal2 .modal-dialog
+{
+  width: 75%;/* your width */
+}
